@@ -9,8 +9,8 @@ class Alumnos:
     def GET(self):
         try:
             result = {} 
-            result['status'] = "200 ok"  
             result['app_version'] = "0.0.1"  # version de la webapp
+            result['status'] = "200 ok"  
 
             datos=web.input()     #Los datos introducidos por el usuario se almacenaran en datos
             if datos['token']=="1234":     #Si el usuario ingresa bien el token se declarara lo siguiente
