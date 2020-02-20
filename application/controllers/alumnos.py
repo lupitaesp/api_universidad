@@ -15,7 +15,6 @@ class Alumnos:
             datos=web.input()     #Los datos introducidos por el usuario se almacenaran en datos
             if datos['token']=="1234":     #Si el usuario ingresa bien el token se declarara lo siguiente
                 result=[]           #Un arreglo
-                result={}          #Un diccionario
                 if datos['action']=="get":        #Si accion es get va a hacer lo siguiente
                     with open('static/csv/alumnos.csv','r') as csvfile:   #Ruta del archivo csv que va a leer, r es de lectura, csvfile es una variable cualquiera
                         reader = csv.DictReader(csvfile)         #Lector del archivo, DictReader te almacena los datos como en diccionario en este caso en la variable reader
