@@ -24,7 +24,7 @@ class Alumnos:
                     return json.dumps(result2)          #Va a regresar un json del result2 que es lo que va almacenando el arreglo
                 else:                           #Si accion no es get va a poner comando no encontrado
                     result2={}
-                    esult2['app_version'] = "0.1.0"
+                    result2['app_version'] = "0.1.0"
                     result2['status']="Command not found"
                     return json.dumps(result2)
             else:
