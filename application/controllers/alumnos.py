@@ -8,6 +8,7 @@ render = web.template.render('application/controllers/')   #En esta no se ocupa
 class Alumnos:
     def GET(self):
         try:
+            result2={}
             result = {} 
             result2['app_version'] = "0.0.1"  # version de la webapp
             result2['status'] = "200 ok"  
